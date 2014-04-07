@@ -1,0 +1,50 @@
+{
+  "ami-id": "ami-12345678",
+  "ami-launch-index": "0",
+  "ami-manifest-path": "unknown",
+  "block-device-mapping": {
+    "ami": "/dev/sda1",
+    "ephemeral0": "sdb",
+    "root": "/dev/sda1"
+  },
+  "hostname": "fake",
+  "iam": {
+    "info": "",
+    "security-credentials": {
+      "role-name": "iam-role-name"
+    }
+  },
+  "instance-action": "none",
+  "instance-id": "i-12345678",
+  "instance-type": "m1.small",
+  "kernel-id": "aki-12345678",
+  "local-hostname": "localhost",
+  "local-ipv4": "127.0.0.1",
+  "mac": "11:22:33:44:55:FF",
+  "network": {
+    "interfaces": {
+      "macs": {
+        "11:22:33:44:55:66": {
+          "device-number": "0",
+          "local-hostname": "fake",
+          "local-ipv4s": "10.10.10.10",
+          "mac": "11:22:33:44:55:ff",
+          "owner-id": "123456789012"
+        }
+      }
+    }
+  },
+  "placement": {
+    "availability-zone": "us-east-1a"
+  },
+  "public-hostname": "vagrant",
+  "public-ipv4": "10.10.10.10",
+  "public-keys": {
+    "0": {
+      "openssh-key": "ssh-rsa AAAA instance"
+    }
+  },
+  "ramdisk-id": "ari-12345678",
+  "reservation-id": "r-12345678",
+  "security-groups": "default"
+}
