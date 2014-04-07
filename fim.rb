@@ -23,14 +23,6 @@ def create_route(path, value)
 end
 
 md = JSON.parse(File.read('fim.json'))
-
 versions.each do |version|
-  create_route("/#{version}/meta-data", "")
-  create_route("/#{version}/meta-data/", md.keys.join("\n"))
-end
-
-md.each do |k, v|
-  versions.each do |version|
-    create_route("/#{version}/meta-data/#{k}", v)
-  end
+  create_route("/#{version}/meta-data", md)
 end
